@@ -154,7 +154,49 @@ body {
   padding-inline: 15px;
 }
 
+.section {
+  padding-block: var(--section-padding);
+}
 
+
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.h1,
+.h2,
+.h3 {
+  line-height: 1.1;
+}
+
+.h1 {
+  color: var(--white);
+  font-family: var(--ff-bangers);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-400);
+  letter-spacing: 1px;
+}
+
+.h2 {
+  font-size: var(--fs-2);
+  /* color: var(--eerie-black); might be both h2 and h3 */
+}
+
+.h3 {
+  font-size: var(--fs-3);
+}
+
+.btn {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 8px 25px;
+  border-radius: 50px;
+  transition: var(--transition-1);
+  max-width: max-content;
+  font-weight: var(--fw-700);
+}
 
 /*-----------------------------------*\
   #HEADER
@@ -277,10 +319,30 @@ body {
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
+.hero {
+  min-height: 360px;
+  margin-block-start: 85px;
+  text-align: center;
+  background-position: left;
+}
+
+.hero-title .span {
+  font-size: 0.5em;
+}
+
+.hero-text {
+  color: var(--white);
+  margin-block: 15px 25px;
+}
+
+.hero .btn {
+  margin-inline: auto;
+}
 
 
-
-
+.hero .btn:is(:hover, :focus) {
+  background-color: var(--portland-orange);
+}
 
 /*-----------------------------------*\
   #CATEGORY
