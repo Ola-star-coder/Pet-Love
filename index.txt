@@ -1,4 +1,4 @@
-Kitter - Hight Quality Pet Food
+Pet-Love - Hight Quality Pet Food
 This is an eCommerce 
 
 
@@ -179,8 +179,7 @@ alt = brand logo
 
 
 #---------- FOOTER ----------#
-
-Kitter
+Pet-Love
 
 If you have any question, please contact us at support@gmail.com
 
@@ -192,8 +191,8 @@ If you have any question, please contact us at support@gmail.com
 
 <ion-icon name="logo-facebook"></ion-icon>
 <ion-icon name="logo-twitter"></ion-icon>
-<ion-icon name="logo-pinterest"></ion-icon>
 <ion-icon name="logo-instagram"></ion-icon>
+<ion-icon name="logo-pinterest"></ion-icon>
 
 Corporate
 
