@@ -612,15 +612,132 @@ body {
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.footer {
+  background-color: var(--raisin-black);
+  color: var(--battleship-gray);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+}
 
+.footer-top {
+  border-block-end: 1px solid var(--onyx);
+}
 
+.footer-top .container {
+  display: grid;
+  gap: 30px;
+}
 
+.footer .logo {
+  color: var(--white);
+  margin-block-end: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-text {
+  font-size: var(--fs-6);
+  margin-block-end: 25px;
+}
+
+.footer-text .link {
+  display: inline-block;
+  color: var(--portland-orange);
+}
+
+.contact-item {
+  margin-block-end: 15px;
+  color: var(--white);
+  font-weight: var(--fw-700);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item ion-icon {
+  /* change ion-icon to class */
+  flex-shrink: 0;
+  color: var(--portland-orange);
+  font-size: 22px;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 12px;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus) {
+  background-color: var(--portland-orange);
+  color: var(--white);
+}
+
+.footer-list-title {
+  color: var(--white);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  padding-block: 10px;
+}
+
+.footer-link {
+  padding-block: 4px;
+  transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--portland-orange);
+}
+
+.footer-bottom {
+  padding-block: 20px;
+}
+
+.copyright-link {
+  display: inline-block;
+}
+
+.copyright {
+  margin-block-end: 10px;
+}
+
+.footer-bottom .img {
+  width: 100%;
+  max-width: max-content;
+}
 
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
 
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: var(--portland-orange);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-2);
+  z-index: 4;
+}
 
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
 
 
 
